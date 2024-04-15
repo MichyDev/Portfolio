@@ -1,0 +1,186 @@
+/* Importazione dei font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Stili di base per il body */
+body {
+    background-color: #E5E4E2;
+    font-family: 'Montserrat', sans-serif; /* Utilizzo del font Montserrat per il testo */
+}
+
+/* Stili per la sidebar */
+.sidebar {
+    width: 250px;
+    height: 400px;
+    background-color: #343a40; /* Grigio scuro */
+    color: #fff; /* Testo bianco */
+    position: fixed;
+    top: 250px;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+    border-top-right-radius: 20px; /* Arrotonda l'angolo in alto a destra */
+    border-bottom-right-radius: 20px; /* Arrotonda l'angolo in basso a destra */
+}
+
+/* Stili per il brand */
+.brand {
+    font-size: 24px;
+    font-style: bold;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stili per i link nella sidebar */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-bottom: 15px;
+}
+
+.nav-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    border-radius: 10px; /* Arrotonda i bordi dei link */
+}
+
+.nav-links a:hover {
+    background-color: #495057; /* Grigio più scuro al passaggio del mouse */
+}
+
+/* Stili per i link social nella sidebar */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%; /* Arrotonda il bordo dell'icona */
+}
+
+/* Stili per il contenuto principale */
+.main-content {
+    margin-left: 250px; /* Larghezza della sidebar */
+    padding: 20px;
+}
+
+/* Stili per il contenitore dei progetti */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Stili per il singolo progetto */
+.project {
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Stili per l'immagine del progetto */
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Stili per le informazioni del progetto */
+.project-info {
+    padding: 20px;
+    display: flex; /* Utilizza il layout flessibile */
+    flex-direction: column; /* Imposta la direzione del layout come colonna */
+}
+
+.project-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.project-info p {
+    font-size: 16px;
+}
+
+.project-info .discord {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px; /* Aggiungi un margine superiore per avvicinare l'emoticon al testo */
+    margin-left: 10px; /* Aggiungi un margine sinistro per separare l'emoticon dal testo */
+}
+
+/* Stili per i bottoni Dettagli */
+.details-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Aggiungi margine superiore per separare il bottone dal testo */
+}
+
+.details-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per l'overlay fullscreen */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inizialmente trasparente */
+    transition: opacity 0.3s; /* Aggiunta di una transizione per l'opacità */
+    pointer-events: none; /* Nasconde gli eventi del mouse finché non è attivo */
+}
+
+.fullscreen-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.active {
+    display: flex;
+    opacity: 1; /* Quando attivo, mostra con opacità piena */
+    pointer-events: auto; /* Abilita gli eventi del mouse quando è attivo */
+}
+
+.close-btn {
+    background-color: #dc3545; /* Colore di sfondo rosso */
+    color: #fff; /* Testo bianco */
+    border: none; /* Rimuove il bordo */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #c82333; /* Cambia il colore di sfondo al passaggio del mouse */
+}

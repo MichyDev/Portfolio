@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css"> <!-- Collegamento al file CSS del carosello -->
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="esperienze.html">Esperienze</a></li>
+            <li><a href="contatti.html">Contatti</a></li>            
+        </ul>
+        <div class="social-links">
+            <a href="https://github.com/MichyDev"><img src="social-icon/icons8-github-48.png" alt="GitHub"></a>
+            <a href="https://instagram.com/Michy.mp4"><img src="social-icon/icons8-instagram-48.png" alt="Instagram"></a>
+            <a href="https://x.com/LangoloDelMichy"><img src="social-icon/icons8-twitter-48.png" alt="Twitter"></a>
+        </div>
+    </div>
+    
+    <!-- Carosello -->
+    <div class="carousel-container">
+        <img class="carousel-img" src="img/90816454_120305326243041_9008549725602840576_n.png" alt="Image 1">
+        <img class="carousel-img" src="img2.jpg" alt="Image 2">
+        <img class="carousel-img" src="img3.jpg" alt="Image 3">
+        <div class="carousel-caption"></div> <!-- Contenitore per la descrizione -->
+        <button id="prev-btn">Indietro</button> <!-- Bottone per immagine precedente -->
+        <button id="next-btn">Avanti</button> <!-- Bottone per immagine successiva -->
+    </div>
+    
+    <script src="js/carousel.js"></script>    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="esperienze.html">Esperienze</a></li>
+            <li><a href="contatti.html">Contatti</a></li>            
+        </ul>
+        <div class="social-links">
+            <a href="https://github.com/MichyDev"><img src="social-icon/icons8-github-48.png" alt="GitHub"></a>
+            <a href="https://instagram.com/Michy.mp4"><img src="social-icon/icons8-instagram-48.png" alt="Instagram"></a>
+            <a href="https://x.com/LangoloDelMichy"><img src="social-icon/icons8-twitter-48.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1 class="texttitle">Progetti</h1>
+        <p class="textp">Qui troverai informazioni sui miei progetti, esperienze lavorative e come contattarmi. <br>Esplora il menu sulla sinistra per navigare.</p>
+    </div>
+    <div class="project-container">
+        <div class="project">
+            <img src="img/trasferimento (2).png" alt="Project 1">
+            <div class="project-info">
+                <h2 class="texttitle">YuriBot</h2>
+                <p class="textp">Discord Bot di AnimeParadise <img class="discord" src="img/Anime2.gif"></p>
+                <a href="#" class="details-btn" data-target="details-yuribot">Dettagli</a> <!-- Aggiunta della classe details-btn -->
+            </div>
+        </div>
+        <div class="project">
+            <img src="img/real news.png" alt="Project 2">
+            <div class="project-info">
+                <h2>!RealNews</h2>
+                <p>Progetto Scolastico <img class="discord" src="img/guraplaying99.GIF"></p>
+                <a href="#" class="details-btn" data-target="details-realnews">Dettagli</a> <!-- Aggiunta della classe details-btn -->
+            </div>
+        </div>
+    </div>
+    <div class="fullscreen-overlay">
+        <div class="fullscreen-content" id="project-details">
+            <button class="close-btn">Chiudi</button>
+            <div id="details-yuribot" style="display: none;">
+                <h1>🤖 Bot Discord Multifunzione 🎵</h1>
+                <p>Questo bot Discord è un compagno versatile per il tuo server, fornendo una vasta gamma di funzionalità utili per migliorare l'esperienza degli utenti.</p>
+            
+                <h2>Funzionalità Principali:</h2>
+                <ul>
+                    <li>🛡️ <strong>Moderazione:</strong>
+                        <ul>
+                            <li>Ban/Kick</li>
+                            <li>Filtri di Parole</li>
+                            <li>Log delle Moderazioni</li>
+                        </ul>
+                    </li>
+                    <li>🎵 <strong>Musica:</strong>
+                        <ul>
+                            <li>Riproduzione di Musica</li>
+                            <li>Comandi di Controllo</li>
+                        </ul>
+                    </li>
+                    <li>⚙️ <strong>Automazione:</strong>
+                        <ul>
+                            <li>Pianificazione di Messaggi</li>
+                            <li>Ruoli Automatici</li>
+                        </ul>
+                    </li>
+                    <li>🔒 <strong>Verifica:</strong> Processo di Verifica</li>
+                    <li>😂 <strong>Meme:</strong>
+                        <ul>
+                            <li>Generazione di Meme</li>
+                            <li>Database di Meme</li>
+                        </ul>
+                    </li>
+                    <li>🔊 <strong>Creazione di Stanze Vocali:</strong>
+                        <ul>
+                            <li>Stanze Vocali Temporanee</li>
+                            <li>Personalizzazione delle Stanze</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h2>Altre Funzionalità:</h2>
+                <ul>
+                    <li>📊 Statistiche del Server</li>
+                    <li>🎮 Giochi Interattivi</li>
+                    <li>🔌 Integrazioni con API Esterne</li>
+                    <li>💬 Supporto per Comandi Personalizzati</li>
+                </ul>
+            
+                <p>Con il suo set completo di funzionalità, questo bot Discord è un alleato affidabile per gestire e migliorare la tua community online.</p>
+            </div>
+            <div id="details-realnews" style="display: none;">
+                <h1>📰 Blog delle Fake News 🚫</h1>
+                <p>Questo sito è stato creato come parte di un progetto scolastico per illustrare come le fake news possano influenzare l'opinione pubblica. Si prega di tenere presente che tutte le notizie presentate qui sono completamente inventate e non dovrebbero essere prese sul serio.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scriptdet.js"></script>    
+</body>
+</html>

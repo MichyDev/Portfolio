@@ -1,0 +1,43 @@
+/* Stili per il riquadro del carosello */
+.carousel-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden; /* Per nascondere le parti delle immagini che escono dal riquadro */
+}
+
+/* Stili per le immagini del carosello */
+.carousel-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* Effetto di transizione per lo scorrimento delle immagini */
+}
+
+/* Stili per la descrizione sotto le immagini */
+.carousel-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+/* Stili per i bottoni prev e next */
+#prev-btn,
+#next-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    background-color: #0056b3;
+}
